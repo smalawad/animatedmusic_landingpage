@@ -1,0 +1,146 @@
+* {
+    --gen-color: #f58634;
+    --black-color: #455A64;
+    --white-color: #F7F7F7;
+    --cst-color: #a2d0c1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cst-color);
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.logo img {
+    height: 3rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    /* margin-left: ; */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+li {
+    margin: 0 0.5rem;
+}
+
+a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+a:hover {
+    color: var(--gen-color);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    /* background: url(images/headphone.svg) no-repeat; */
+    background-size: 100% 10rem;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image img {
+    margin-top: 5rem;
+    width: 40vw;
+}
+
+.content {
+    margin-top: 13rem;
+    width: 40vw;
+    animation: animate 1s ease 1;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--black-color);
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: var(--gen-color);
+    margin: 1rem 0;
+}
+
+p {
+    font-size: 1.3rem;
+    color: var(--black-color);
+}
+
+button {
+    height: 3.5rem;
+    width: 11rem;
+    background: var(--gen-color);
+    color: var(--black-color);
+    border-radius: 3rem;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    border: none;
+
+}
+
+button:hover {
+    background: var(--black-color);
+    color: var(--gen-color);
+}
+
+a:nth-child(2) button {
+    margin-left: 2rem;
+}
+
+.social {
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.social a {
+    color: var(--black-color);
+    font-size: 2.7rem;
+}
+
+.social a img {
+    margin: 45px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 45px;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(5rem);
+    }
+
+    100% {
+        transform: translateY(5rem);
+    }
+}
